@@ -16,7 +16,8 @@ public class Person {
         this.age = age;
         this.married = married;
     }
-    public static void display(){
+
+    public static void display() {
         System.out.println();
     }
 }
