@@ -1,3 +1,6 @@
+package dto;
+
+import dto.Employee;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
@@ -14,6 +17,10 @@ public class SaleManager extends Employee {
         super(name, age, married, company, position, baseSalary);
         this.totalSales = totalSales;
         this.bonus = bonus;
+    }
+
+    public double calculateSalary() {
+        return getBaseSalary() + totalSales * bonus / 100;
     }
 
 }
