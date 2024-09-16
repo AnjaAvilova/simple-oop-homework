@@ -8,7 +8,7 @@ import lombok.ToString;
 @Setter
 @ToString(callSuper = true)
 
-public class Employee extends Person {
+public abstract class Employee extends Person {
 
 
     private String company;
@@ -21,4 +21,5 @@ public class Employee extends Person {
         this.position = position;
         this.baseSalary = baseSalary;
     }
+    public abstract double calculateSalary();
 }

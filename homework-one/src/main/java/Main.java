@@ -14,8 +14,9 @@ public class Main {
         WageEmployee wageEmployee2 = new WageEmployee("Аксинья", 25, true, "company3", "wageManager", 68, 35, 12);
         WageEmployee wageEmployee3 = new WageEmployee("Фрося", 20, true, "company3", "wageManager", 78, 40, 12);
 
-        Employee[] employees = {manager1, manager2, manager3, saleManager1, saleManager2, saleManager3, saleManager4, wageEmployee1, wageEmployee2, wageEmployee3};
+        Employee[] employees = {manager1, manager2, manager3, saleManager1, saleManager2, saleManager3, null, wageEmployee1, wageEmployee2, wageEmployee3};
         PersonApp.printInfo(employees);
+        PersonApp.printInfo(null);
     }
 
 }

@@ -7,7 +7,7 @@ import lombok.ToString;
 
 @Getter
 @Setter
-@ToString
+@ToString(callSuper = true)
 public class WageEmployee extends Employee {
     private double hours;
     private double wage;
